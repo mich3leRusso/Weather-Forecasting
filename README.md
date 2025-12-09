@@ -15,3 +15,25 @@ EDA helps identify patterns, detect anomalies, and guide data transformations, e
 
 ![weather trend](images_/trend.png)
 ![weather correlation](images_/correlations.png)
+
+Following the exploratory analysis, we train a Gated Recurrent Unit (GRU) based forecasting model. GRUs belong to the Recurrent Neural Network (RNN) family and are specifically designed to model sequential and time dependent data, making them well suited for weather forecasting tasks.
+
+The choice of a GRU architecture is motivated by its efficient gating mechanism, which allows it to capture long-term temporal dependencies while using fewer parameters than more complex architectures such as Long Short-Term Memory (LSTM) networks. This reduced complexity leads to faster training times, lower memory requirements, and more stable optimization, while still achieving competitive predictive performance in practice.
+
+As a result, the GRU model represents a balanced trade-off between computational efficiency and forecasting accuracy, making it particularly suitable for large-scale or resource-constrained training scenarios.
+
+![GRU model](images_/gru.png)
+
+Meteorological variables often exhibit strong seasonal patterns at different temporal scales (e.g., daily, weekly, or annual cycles). Applying a single global normalization strategy across all series may therefore obscure meaningful variations and degrade model performance.
+
+To address this, each time series is normalized while explicitly accounting for its seasonality parameters. This approach preserves relative temporal dynamics within each seasonal cycle, improves feature consistency across variables, and facilitates more stable and efficient training of the forecasting model. By aligning the statistical properties of the data with their underlying seasonal behavior, the model is better able to learn robust and generalizable temporal patterns.
+
+# How to use? 
+
+Download the repository: 
+
+"
+git clone https://github.com/mich3leRusso/Weather-Forecasting.git
+"
+Upload the file ipynb with its own datafile on google colab and run
+
