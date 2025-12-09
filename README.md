@@ -32,9 +32,7 @@ To address this, each time series is normalized while explicitly accounting for 
 
 Download the repository: 
 
-""
-git clone https://github.com/mich3leRusso/Weather-Forecasting.git
-""
+`git clone https://github.com/mich3leRusso/Weather-Forecasting.git`
 
 Upload the file ipynb with its own datafile on google colab and run
 
