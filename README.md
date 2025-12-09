@@ -7,9 +7,11 @@ Accurate weather prediction plays a crucial role in agriculture, transportation,
 
 ![Weather prediction output](images_/weather_foprecasting.jpg)
 
-## Model used 
+## Repository Aim 
 
-This repository offers a simple yet effective way to train a forecasting model over the **AIMSIR** dataset. The first step while you do this is to provide the EDA which is explorative datat analisys , L'EDA consente di determinare il modo migliore per manipolare le fonti di dati al fine di ottenere le risposte desiderate, facilitando ai data scientist la scoperta dei pattern, l'individuazione di anomalie, il test o la verifica di un'ipotesi.
+This repository provides a simple yet effective pipeline for training a weather forecasting model on the AIMSIR dataset. The workflow begins with Exploratory Data Analysis (EDA), which is used to understand the structure and characteristics of the data.
+
+EDA helps identify patterns, detect anomalies, and guide data transformations, enabling informed decisions on how to preprocess and model the data effectively. This step is essential for selecting suitable features and ensuring reliable forecasting performance.
 
 ![weather trend](images_/trend.png)
 ![weather correlation](images_/correlations.png)
